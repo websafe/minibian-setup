@@ -39,7 +39,7 @@ else
   echo "TIMEZONE: \"${TIMEZONE}\""
   echo ""
   echo "Press [Enter] to confirm and continue or [Ctrl+C] to abort."
-  read
+  read dummy
 fi
 
 #
