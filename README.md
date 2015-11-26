@@ -1,6 +1,8 @@
 minibian-setup.sh
 =================
 
+A simple Bash script for automated setup of a stock [MINIBIAN] installation.
+
 Usage
 -----
 
@@ -14,12 +16,12 @@ wget http://git.io/vBRfm
 What next?
 ----------
 
-If your wlan0 is not working after rebooting, you're probably missing kernel
+If your `wlan0` is not working after rebooting, you're probably missing kernel
 firmware for your wireless network adapter.
 
-Just check `dmesg` for lines looking like:
+Just check `dmesg` for entries looking like:
 
-> r8188eu 1-1.5:1.0: **Firmware** _rtlwifi/rtl8188eufw.bin__ **not available**
+> r8188eu 1-1.5:1.0: **Firmware** _rtlwifi/rtl8188eufw.bin_ **not available**
 
 
 and use `apt-file` to find the corresponding package containing this firmware:
@@ -45,3 +47,8 @@ apt-get -y install firmware-realtek
 
 
 Now unplug and reinsert the wireless adapter or reboot.
+
+
+
+[MINIBIAN]: https://minibianpi.wordpress.com/
+
