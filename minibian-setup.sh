@@ -47,7 +47,7 @@ apt-get -y update
 apt-get -y upgrade
 
 #
-apt-get -y install apt-utils raspi-config \
+apt-get -y install apt-utils apt-file raspi-config \
   usbutils wpasupplicant crda mc
 
 #
