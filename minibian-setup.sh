@@ -96,7 +96,7 @@ cat /proc/partitions
 resize2fs /dev/mmcblk0p2
 
 #
-apt-get -y install rpi-update 
+apt-get -y install rpi-update
 PRUNE_MODULES=1 rpi-update
 
 #
