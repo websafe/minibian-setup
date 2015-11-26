@@ -3,13 +3,14 @@ minibian-setup.sh
 
 A simple Bash script for automated setup of a stock [MINIBIAN] installation.
 
+
 Usage
 -----
 
 ~~~~ bash
 cd /tmp
-wget http://git.io/vBRfm
-./minibian-setup.sh "MY-WLAN-SSID" "MY-WLAN-PASSPHRASE"
+wget --content-disposition http://git.io/vBRfm
+sh minibian-setup.sh "MY-WLAN-SSID" "MY-WLAN-PASSPHRASE"
 ~~~~
 
 
