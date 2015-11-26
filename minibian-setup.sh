@@ -84,7 +84,13 @@ update-alternatives --install \
 raspi-config --expand-rootfs
 
 #
+cat /proc/partitions
+
+#
 partprobe /dev/mmcblk0
+
+#
+cat /proc/partitions
 
 #
 resize2fs /dev/mmcblk0p2
